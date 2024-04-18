@@ -1,5 +1,5 @@
 class Solution:
-    def trap(self, height: List[int]) -> int:
+    def trap(self, height: list[int]) -> int:
         max_left = [0]*len(height)
         for i in range(1, len(max_left)):
             max_left[i] = max(max_left[i-1], height[i-1])
